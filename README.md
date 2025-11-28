@@ -84,6 +84,16 @@ Built with Pydantic for type safety and validation:
 
 ## Installation
 
+### Quick Setup (Recommended)
+
+Run the setup script:
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+### Manual Setup
+
 1. Clone the repository:
 ```bash
 git clone <repository-url>
@@ -108,9 +118,9 @@ cp .env.example .env
 - `OPENAI_API_KEY` - Your OpenAI API key (get one at https://platform.openai.com)
 
 **Optional Configuration:**
-- `OPENAI_MODEL` - Model to use (default: gpt-4o-mini)
-- `OPENAI_TEMPERATURE` - Response creativity (default: 0.3)
-- `MAX_AUDIO_SIZE_MB` - Maximum audio file size (default: 25)
+- `OPENAI_MODEL` - Model to use (default: gpt-3.5-turbo)
+- `OPENAI_TEMPERATURE` - Response creativity (default: 0.7)
+- `WHISPER_MODEL` - Transcription model (default: whisper-1)
 - See `.env.example` for all available options
 
 ## Usage
